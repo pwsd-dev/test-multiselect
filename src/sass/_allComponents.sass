@@ -239,3 +239,200 @@
 
         &.active
             opacity: 1
+
+.multiselect-wrapper
+    display: flex
+
+.multiselect-wrapper-left-side
+    margin-right: 80px
+
+.select-industry
+    padding: 12px 21px 12px 12px
+    width: 205px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border: solid #A1A1A1 1px
+    border-radius: 8px
+    margin-bottom: 40px
+    position: relative
+
+    &.active
+        border-color: #5096F1
+        svg
+            transform: rotate(180deg)
+
+    &.long
+        width: 425px
+
+    .page__text-12-Regular
+        position: absolute
+        top: -10px
+        left: 5px
+        background-color: #fff
+        padding: 0 3px 0 3px
+
+    .select-industry-inner
+        position: absolute
+        top: 60px
+        left: 0
+        padding: 16px 0px 20px 20px
+        width: 92%
+        box-shadow: 0px 2px 4px rgba(97, 97, 97, 0.18), 0px 4px 8px rgba(97, 97, 97, 0.18)
+        border-radius: 12px
+
+.checkbox
+    margin-bottom: 25px
+
+    label
+        font-family: Manrope
+        font-weight: 400
+        font-size: 16px
+        color: #000
+        letter-spacing: 1.68%
+        line-height: 24px
+        position: relative
+        width: 100%
+        span
+            font-family: Manrope
+            font-size: 14px
+            color: #1672EC
+            position: absolute
+            top: 22px
+            left: 47px
+            opacity: 0
+        b
+            color: #1672EC
+            margin-left: 5px
+
+    .custom-checkbox
+        position: absolute
+        z-index: -1
+        opacity: 0
+
+    .custom-checkbox+label
+        display: inline-flex
+        align-items: center
+        user-select: none
+
+    .custom-checkbox+label::before
+        content: ''
+        display: inline-block
+        width: 22px
+        height: 22px
+        flex-shrink: 0
+        flex-grow: 0
+        border: 2px solid #818181
+        border-radius: 4px
+        margin-right: 21px
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: 50% 50%
+
+    .custom-checkbox:not(:disabled):not(:checked)+label:hover::before
+        border-color: #b3d7ff
+
+    /* стили для активного состояния чекбокса (при нажатии на него) */
+    .custom-checkbox:not(:disabled):active+label::before
+        background-color: #b3d7ff
+        border-color: #C5DCFA
+
+    .custom-checkbox:not(:disabled):active+label
+        font-weight: 700
+
+    /* стили для чекбокса, находящегося в фокусе */
+    .custom-checkbox:focus+label::before
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25)
+
+    /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+    .custom-checkbox:focus:not(:checked)+label::before
+        border-color: #80bdff
+
+    .custom-checkbox:checked+label::before
+        border-color: #0b76ef
+        background-color: #0F56B3
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e")
+
+    .custom-checkbox:checked+label
+        font-weight: 700
+        span
+            opacity: 1
+
+.amentities-picked
+    width: 430px
+    padding: 12px 16px 0px 12px
+    margin-bottom: 39px
+    border: solid #A1A1A1 1px
+    border-radius: 8px
+    position: relative
+    display: flex
+    justify-content: space-between
+
+    .page__text-12-Regular
+        position: absolute
+        top: -10px
+        left: 5px
+        background-color: #fff
+        padding: 0 3px 0 3px
+
+.amentities-picked__left
+    display: flex
+    flex-wrap: wrap
+    max-width: 340px
+
+.amentities-picked__right
+    align-self: center
+    margin-bottom: 10px
+
+.amentities
+    padding: 15px 12px 0 12px
+    border: solid #A1A1A1 1px
+    border-radius: 8px
+    position: relative
+    .border
+        margin: 30px 0
+        background-color: 1px solid #E0E0E0
+        width: 434px
+        border: 1px solid #E0E0E0
+    .page__text-12-Regular
+        position: absolute
+        top: -10px
+        left: 5px
+        background-color: #fff
+        padding: 0 3px 0 3px
+
+.amentities__row
+    display: flex
+    margin-bottom: 16px
+
+    .page__btn-1
+        margin: 0
+        margin-right: 12px
+
+.form
+    margin-bottom: 20px
+
+    .custom-input
+        position: relative
+
+        &::before
+            content: ''
+            position: absolute
+            background-image: url(../assets/images/png/search.svg)
+            width: 19px
+            height: 19px
+            background-size: cover
+            top: 11px
+            left: 15px
+
+        input
+            width: 386px
+            height: 40px
+            padding-left: 48px
+            border: 1px solid #E0E0E0
+            border-radius: 8px
+            &::placeholder
+                font-family: Manrope
+                font-weight: 400
+                font-size: 16px
+                color: #818181

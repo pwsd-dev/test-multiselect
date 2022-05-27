@@ -2,17 +2,18 @@ section.multiselect
     .wrapper
         .multiselect-wrapper
             .multiselect-wrapper-left-side
-                .select-industry
+                .select-industry.mb-30
                     p.page__text-16-Regular Select industry
-                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="6" height="10" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.24738 11.1399L2.45115 5.6585C1.88539 5.01192 2.34457 4 3.20373 4H12.7962C13.6554 4 14.1145 5.01192 13.5488 5.6585L8.75254 11.1399C8.35413 11.5952 7.6458 11.5952 7.24738 11.1399Z" fill="black"/>
                     </svg>
-                .select-industry.active
-                    p.page__text-12-Regular industry
-                    p.page__text-16-Regular 2 items selected
-                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.24738 11.1399L2.45115 5.6585C1.88539 5.01192 2.34457 4 3.20373 4H12.7962C13.6554 4 14.1145 5.01192 13.5488 5.6585L8.75254 11.1399C8.35413 11.5952 7.6458 11.5952 7.24738 11.1399Z" fill="#5096F1"/>
-                    </svg>
+                .select-industry-wrapper
+                    .select-industry.active.mb-8
+                        p.page__text-12-Regular industry
+                        p.page__text-16-Regular 2 items selected
+                        <svg width="6" height="10" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.24738 11.1399L2.45115 5.6585C1.88539 5.01192 2.34457 4 3.20373 4H12.7962C13.6554 4 14.1145 5.01192 13.5488 5.6585L8.75254 11.1399C8.35413 11.5952 7.6458 11.5952 7.24738 11.1399Z" fill="#5096F1"/>
+                        </svg>
                     .select-industry-inner
                         .checkbox
                             input(class="custom-checkbox" type="checkbox" id="Food" name="Food" )
@@ -36,9 +37,9 @@ section.multiselect
                             input(class="custom-checkbox" type="checkbox" id="Other" name="Other" )
                             label(for="Other") Other
             .multiselect-wrapper-right-side
-                .select-industry.long
+                .select-industry.long.mb-30
                     p.page__text-16-Regular Pick desired amentities
-                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="6" height="10" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.24738 11.1399L2.45115 5.6585C1.88539 5.01192 2.34457 4 3.20373 4H12.7962C13.6554 4 14.1145 5.01192 13.5488 5.6585L8.75254 11.1399C8.35413 11.5952 7.6458 11.5952 7.24738 11.1399Z" fill="black"/>
                     </svg>
                 .amentities-picked
@@ -53,7 +54,7 @@ section.multiselect
                         button.page__btn-1 Gym
                         button.page__btn-1 Breakfast
                     .amentities-picked__right
-                        <svg width="14" height="14" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="15" height="15" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.646447 0.646447C0.841709 0.451184 1.15829 0.451184 1.35355 0.646447L4 3.29289L6.64645 0.646447C6.84171 0.451184 7.15829 0.451184 7.35355 0.646447C7.54882 0.841709 7.54882 1.15829 7.35355 1.35355L4.70711 4L7.35355 6.64645C7.54882 6.84171 7.54882 7.15829 7.35355 7.35355C7.15829 7.54882 6.84171 7.54882 6.64645 7.35355L4 4.70711L1.35355 7.35355C1.15829 7.54882 0.841709 7.54882 0.646447 7.35355C0.451184 7.15829 0.451184 6.84171 0.646447 6.64645L3.29289 4L0.646447 1.35355C0.451184 1.15829 0.451184 0.841709 0.646447 0.646447Z" fill="#D4B011"/>
                             </svg>
                 .amentities
@@ -64,31 +65,32 @@ section.multiselect
                     form.form
                         .custom-input
                             input(type="text" placeholder="People, places, events")
-                    .checkbox
-                        input(class="custom-checkbox" type="checkbox" id="Bathroom" name="Bathroom" )
-                        label(for="Bathroom") Bathroom
-                    .checkbox
-                        input(class="custom-checkbox" type="checkbox" id="Breakfast" name="Breakfast" )
-                        label(for="Breakfast") Breakfast
-                    .checkbox
-                        input(class="custom-checkbox" type="checkbox" id="Gym" name="Gym" )
-                        label(for="Gym") Gym
-                    .checkbox
-                        input(class="custom-checkbox" type="checkbox" id="Free-parking" name="Free-parking" )
-                        label(for="Free-parking") Free parking
-                    .checkbox
-                        input(class="custom-checkbox" type="checkbox" id="Free-Wi-Fi" name="Free-Wi-Fi" )
-                        label(for="Free-Wi-Fi") Free Wi-Fi
-                    .checkbox
-                        input(class="custom-checkbox" type="checkbox" id="Pet-friendly" name="Pet-friendly" )
-                        label(for="Pet-friendly") Pet-friendly
-                    .border
-                    .checkbox
-                        input(class="custom-checkbox" type="checkbox" id="paper" name="paper" )
-                        label(for="paper") I don't need a toilet paper
-                    .checkbox
-                        input(class="custom-checkbox" type="checkbox" id="set-time" name="set-time" )
-                        label(for="set-time") Please, wake me up at <b>Set time</b>
+                    .amentities-checkbox-wrapper
+                        .checkbox
+                            input(class="custom-checkbox" type="checkbox" id="Bathroom" name="Bathroom" )
+                            label(for="Bathroom") Bathroom
+                        .checkbox
+                            input(class="custom-checkbox" type="checkbox" id="Breakfast" name="Breakfast" )
+                            label(for="Breakfast") Breakfast
+                        .checkbox
+                            input(class="custom-checkbox" type="checkbox" id="Gym" name="Gym" )
+                            label(for="Gym") Gym
+                        .checkbox
+                            input(class="custom-checkbox" type="checkbox" id="Free-parking" name="Free-parking" )
+                            label(for="Free-parking") Free parking
+                        .checkbox
+                            input(class="custom-checkbox" type="checkbox" id="Free-Wi-Fi" name="Free-Wi-Fi" )
+                            label(for="Free-Wi-Fi") Free Wi-Fi
+                        .checkbox
+                            input(class="custom-checkbox" type="checkbox" id="Pet-friendly" name="Pet-friendly" )
+                            label(for="Pet-friendly") Pet-friendly
+                        .border
+                        .checkbox
+                            input(class="custom-checkbox" type="checkbox" id="paper" name="paper" )
+                            label(for="paper") I don't need a toilet paper
+                        .checkbox
+                            input(class="custom-checkbox" type="checkbox" id="set-time" name="set-time" )
+                            label(for="set-time") Please, wake me up at <b>Set time</b>
                     
 
 

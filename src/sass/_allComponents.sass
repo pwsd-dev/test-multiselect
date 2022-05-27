@@ -4,6 +4,10 @@
 .multiselect-wrapper-left-side
     margin-right: 80px
 
+.select-industry-wrapper
+    display: flex
+    flex-direction: column
+
 .select-industry
     padding: 12px 21px 12px 12px
     width: 205px
@@ -12,7 +16,6 @@
     align-items: center
     border: solid #A1A1A1 1px
     border-radius: 8px
-    margin-bottom: 40px
     position: relative
 
     &.active
@@ -30,18 +33,14 @@
         background-color: #fff
         padding: 0 3px 0 3px
 
-    .select-industry-inner
-        position: absolute
-        top: 60px
-        left: 0
-        padding: 16px 0px 20px 20px
-        width: 92%
-        box-shadow: 0px 2px 4px rgba(97, 97, 97, 0.18), 0px 4px 8px rgba(97, 97, 97, 0.18)
-        border-radius: 12px
+.select-industry-inner
+    padding: 16px 0px 0px 20px
+    width: 92%
+    box-shadow: 0px 2px 4px rgba(97, 97, 97, 0.18), 0px 4px 8px rgba(97, 97, 97, 0.18)
+    border-radius: 12px
 
 .checkbox
-    margin-bottom: 25px
-
+    margin-bottom: 21px
     label
         font-family: Manrope
         font-weight: 400
@@ -76,8 +75,8 @@
     .custom-checkbox+label::before
         content: ''
         display: inline-block
-        width: 22px
-        height: 22px
+        width: 18px
+        height: 18px
         flex-shrink: 0
         flex-grow: 0
         border: 2px solid #818181
@@ -119,7 +118,7 @@
 .amentities-picked
     width: 430px
     padding: 12px 16px 0px 12px
-    margin-bottom: 39px
+    margin-bottom: 29px
     border: solid #A1A1A1 1px
     border-radius: 8px
     position: relative
@@ -167,6 +166,9 @@
         margin: 0
         margin-right: 12px
 
+.amentities-checkbox-wrapper
+    padding-left: 15px
+
 .form
     margin-bottom: 20px
 
@@ -194,3 +196,8 @@
                 font-weight: 400
                 font-size: 16px
                 color: #818181
+
+.mb-30
+    margin-bottom: 30px
+.mb-8
+    margin-bottom: 8px
